@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+      .change {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="test">hide me</div>
+    <button class="HideMe">click me</button>
+    <ul>
+      <li>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+        impedit nesciunt necessitatibus quae, ullam, optio officiis, animi
+        quaerat mollitia est id iure excepturi expedita quisquam atque. Animi
+        impedit minima eaque.
+      </li>
+      <li>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+        quidem!
+      </li>
+    </ul>
+    <button class="HideMe">click me</button>
+    <button onClick="hideMe()">click meee</button>
+
+    <script>
+      let show = 0;
+      function hideMe() {
+        if (show == 0) {
+          document.getElementById("test").classList.add("change");
+          show = 1;
+        } else {
+          document.getElementById("test").classList.remove("change");
+          show = 0;
+        }
+      }
+
+      // *************jQuery**********
+      $(document).ready(function () {
+        $("#test").text(`hello my first jQuery`);
+      });
+
+      $(document).ready(function () {
+        $(".HideMe").click(function () {
+          $("#test").hide();
+        });
+      });
+
+      $(document).ready(function () {
+        $(".HideMe").click(function () {
+          $("li:first").hide();
+        });
+      });
+      //   syntex: css("propertyname", "value");
+    </script>
+  </body>
+</html>

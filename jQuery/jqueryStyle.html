@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="#" id="anchor">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur,
+      provident?
+    </a>
+    <button id="jquerycss">click me</button>
+
+    <script>
+      //   $(document).ready(function () {
+      //     $("#jquerycss").click(function () {
+      //       $("#anchor").css("textDecoration", "none");
+      //     });
+      //   });
+
+      //   $(document).ready(function () {
+      //     $("#jquerycss").click(function () {
+      //       $("#anchor").css({
+      //         textDecoration: "none",
+      //         "background-color": "yellow",
+      //         color: "red",
+      //       });
+      //     });
+      //   });
+
+      //   universal selector for css
+      //   $(document).ready(function () {
+      //     $("*").css("backgroundColor", "red");
+      //   });
+
+      $(document).ready(function () {
+        $("#jquerycss").click(function () {
+          $(this).css("backgroundColor", "red");
+        });
+      });
+
+      //   $(document).ready(function () {
+      //     $("#jquerycss").click(function () {
+      //       $("[href]").hide("slow");
+      //     });
+      //   });
+
+      // for example only
+      //    $(document).ready(function () {
+      //     $("#jquerycss").click(function () {
+      //       $("li:even").css("color","red")
+      //     });
+      //   });
+
+      // $(document).ready(function () {
+      //     $("#jquerycss").click(function () {
+      //       $("li:first-child").css("color","red")
+      //     });
+      //   });
+
+      //    $(document).ready(function () {
+      //     $("#jquerycss").click(function () {
+      //       $(" #id li:first-child").css("color","red")
+      //     });
+      //   });'
+
+      //    $(document).ready(function () {
+      //     $("#jquerycss").click(function () {
+      //       $(" #id li:nth-child(3)").css("color","red")
+      //     });
+      //   });
+
+      //    $(document).ready(function () {
+      //     $("#jquerycss").click(function () {
+      //       $(" #id li:nth-last-child(3)").css("color","red") from down
+      //     });
+      //   });
+    </script>
+  </body>
+</html>

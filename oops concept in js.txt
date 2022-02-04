@@ -1,0 +1,17 @@
+oops in javascript->
+four piller in oops are ---
+>encapsulation
+>abstraction
+>Inheritance
+>polymorphism
+
+Encapsulation->1.Removing access to parts of your code and making things private is exactly what Encapsulation is all about.
+               2.Limit what pieces of your code can access. Make more things inaccessible, if they aren't needed.
+               3. reduce complexity
+Abstraction->1.to hide away the implementation details inside something.
+             2.You don't have to worry about how the function works.
+             3.hide details and complexity
+Inheritance->1.Inheritance lets one object acquire the properties and methods of another object.
+             2.parent implements child concept.
+poly-Morphism-> allow you to get rid og long if and else case
+many- Form 
